@@ -1,0 +1,30 @@
+body {
+    background: url(/Udemy/2022\ Web\ Development\ Bootcamp/02.75\ -\ Space\ Tourism/assets/home/background-home-desktop.jpg) no-repeat center center/cover;
+}
+
+#content {
+    bottom: 240px;
+    left: 240px;
+    position: absolute;
+    width: 450px;
+}
+
+#main-button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    bottom: 240px;
+    color: black;
+    font-size: 25px;
+    font-family: 'Bellefair', serif;
+    padding: 120px 80px;
+    position: absolute;
+    right: 240px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#main-button:hover {
+    box-shadow: 0 0 0 100px rgba(255, 255, 255, 0.15);
+    transition: .4s ease-out;
+}
