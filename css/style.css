@@ -11,6 +11,11 @@ body {
     height: calc(100vh - 50px);
 }
 
+hr {
+    border-color: var(--lightblue);
+    opacity: .2;
+}
+
 /* Start of text settings */
 h1, h2, h3, h4 {
     font-family: 'Bellefair', serif;
@@ -21,6 +26,7 @@ h1, h2, h3, h4 {
 
 h5, .subh1, .subh2, .nav-text {
     font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
 }
 
 h1 { font-size: 150px; }
@@ -29,6 +35,7 @@ h3 { font-size: 56px; }
 h4 { font-size: 32px; }
 h5 { 
     font-size: 28px;
+    font-weight: 400;
     letter-spacing: 4.75px;
 }
 .subh1, .subh2 { color: var(--lightblue); }
@@ -40,12 +47,9 @@ h5 {
     font-size: 14px;
     letter-spacing: 2.35px; 
 }
-.nav-text { 
-    font-size: 16px; 
-    letter-spacing: 2.7px;
-}
 p { 
     color: var(--lightblue);
+    letter-spacing: 1px; 
     line-height: 2;
 }
 /* End of text settings */
@@ -69,20 +73,21 @@ nav ul {
     width: 50%;
 }
 
-nav ul li {
+.nav-text { 
     display: inline-block;
     height: 100%;
     margin: 0 35px;
     text-decoration: none;
-    text-transform: uppercase;
+    font-size: 16px; 
+    letter-spacing: 2.7px;
 }
 
-nav ul li.active {
+.nav-text.active {
     box-sizing: border-box;
     border-bottom: solid white 2px;
 }
 
-nav ul li:hover:not(.active) {
+.nav-text:hover:not(.active) {
     border-bottom: solid goldenrod 2px;
 }
 
@@ -100,4 +105,15 @@ nav ul li a:before {
 
 #logo {
     margin: 21px 75px;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 0 150px;
+}
+
+.gray {
+    color: gray;
+    font-weight: bold;
+    margin-right: 15px;
 }

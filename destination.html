@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair" rel="stylesheet">
       	<title>Frontend Mentor | Space tourism website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/destination.css">
 </head>
 <body>
   	<nav>
@@ -20,24 +21,35 @@
 			<li class="nav-text"><a href="technology.html"><b>03</b> Technology</a></li>
 		</ul>
 	</nav>
-
-    01 Pick your destination
-
-    Moon
-    Mars
-    Europa
-    Titan
-
-    Moon
-
-    See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-    regain perspective and come back refreshed. While you’re there, take in some history 
-    by visiting the Luna 2 and Apollo 11 landing sites.
-
-    Avg. distance
-    384,400 km
-
-    Est. travel time
-    3 days
+    <div class="container">
+        <h5 id="title"><span class="gray">01</span> Pick your destination</h5>
+        <div class="wrapper">
+            <div class="img-container">
+                <img class="dest-img" src="" alt="">
+            </div>
+            <div class="right">
+                <ul class="dest-menu">
+                    <li class="menu-text active" id="0">Moon</li>
+                    <li class="menu-text" id="1">Mars</li>
+                    <li class="menu-text" id="2">Europa</li>
+                    <li class="menu-text" id="3">Titan</li>
+                </ul>
+                <h2 id="dest-name"></h2>
+                <p class="spaced"></p>
+                <hr>
+                <div id="dest-info">
+                    <div>
+                        <p class="subh2">Avg. distance</p>
+                        <h4 id="distance"></h4>
+                    </div>
+                    <div>
+                        <p class="subh2">Est. travel time</p>
+                        <h4 id="travel"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="scripts/destination.js"></script>
 </body>
 </html>

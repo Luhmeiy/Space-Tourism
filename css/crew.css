@@ -1,0 +1,100 @@
+body {
+    background: url(/Udemy/2022\ Web\ Development\ Bootcamp/02.75\ -\ Space\ Tourism/assets/crew/background-crew-desktop.jpg) no-repeat center center/cover;
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+}
+
+.container {
+    flex: 1 1 auto;
+}
+
+#title {
+    margin-left: 50px;
+    margin-top: 0;
+}
+
+.wrapper {
+    display: inline-block;
+    margin-top: 150px;
+    white-space: none;
+    width: 100%;
+}
+
+.img-container, .left {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.img-container {
+    bottom: 0;
+    height: 80%;
+    margin: 0 auto;
+    position: absolute;
+    width: 50%;
+}
+
+.dest-img {
+    bottom: 0;
+    margin: 0 100px;
+    height: 100%;
+    position: absolute;
+    width: auto;
+}
+
+.left {
+    float: top;
+    margin-left: 50px;
+    width: 40%;
+}
+
+#role {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.dest-menu {
+    height: 35px;
+    margin: 100px 0 30px;
+    padding: 0;
+}
+
+.menu-text {
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin: 0 10px;
+    width: 15px;
+}
+
+.menu-text.active {
+    background-color: white;
+}
+
+.menu-text:hover:not(.active) {
+    background-color: goldenrod;
+}
+
+.menu-text:first-of-type { 
+    margin: 0 15px 0 0;
+}
+
+.spaced {
+    margin-bottom: 50px;
+}
+
+#dest-info {
+    display: inline-block;
+    white-space: none;
+    width: 100%;
+}
+
+#dest-info div:first-of-type {
+    margin-right: 20%;
+}
+
+#dest-info div {
+    display: inline-block;
+}
