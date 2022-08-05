@@ -11,17 +11,3 @@
 
 # Remove docs folder
 docs/
-
-#Remove random files
-crew-commander.html
-crew-engineer.html
-crew-pilot.html
-crew-specialist.html
-destination-europa.html
-destination-mars.html
-destination-moon.html
-destination-titan.html
-technology-capsule.html
-technology-spaceport.html
-technology-vehicle.html
-tst.html

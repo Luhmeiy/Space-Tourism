@@ -87,9 +87,7 @@ nav ul {
     border-bottom: solid white 2px;
 }
 
-.nav-text:hover:not(.active) {
-    border-bottom: solid goldenrod 2px;
-}
+.nav-text:hover:not(.active) { border-bottom: solid goldenrod 2px; }
 
 nav ul li a {
     color: inherit;
@@ -103,10 +101,9 @@ nav ul li a:before {
     height: 100%;
 }
 
-#logo {
-    margin: 21px 75px;
-}
+#logo { margin: 21px 75px; }
 
+/* Used everywhere except index.html */
 .container {
     margin-top: 100px;
     padding: 0 150px;
@@ -117,3 +114,18 @@ nav ul li a:before {
     font-weight: bold;
     margin-right: 15px;
 }
+
+#title { margin-left: 50px; }
+
+.wrapper {
+    display: inline-block;
+    white-space: none;
+    width: 100%;
+}
+
+.left, .buttons, .right, .img-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.spaced { margin-bottom: 50px; }
