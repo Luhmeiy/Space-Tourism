@@ -1,30 +1,94 @@
 body {
-    background: url(../assets/home/background-home-desktop.jpg) no-repeat center center/cover;
+    background: url(../assets/home/background-home-mobile.jpg) no-repeat center center/cover;
 }
 
 #content {
-    bottom: 240px;
-    left: 240px;
-    position: absolute;
-    width: 450px;
+    margin: 50px auto 125px;
+    position: relative;
 }
 
 #main-button {
     background-color: white;
     border: none;
     border-radius: 50%;
-    bottom: 240px;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Bellefair', serif;
-    padding: 120px 80px;
-    position: absolute;
-    right: 240px;
+    padding: 62.5px 32.5px;
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 #main-button:hover {
-    box-shadow: 0 0 0 100px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.15);
     transition: .4s ease-out;
+}
+
+p {
+    font-size: 15px;
+    width: 90%;
+}
+
+/* Media Query for Smartphone */
+@media (max-width: 767px) {
+    .subh1 { letter-spacing: 3px; }
+}
+
+/* Media Query for Tablet */
+@media (min-width: 768px) {
+    body {
+        background: url(../assets/home/background-home-tablet.jpg) no-repeat center center/cover;
+    }
+
+    .subh1 { font-size: 20px; }
+    
+    p { 
+        font-size: 16px; 
+        margin: auto;
+        width: 80%;
+    }
+
+    #content { 
+        margin: 0 auto 75px; 
+        padding: 120px 80px;
+    }
+
+    #main-button { 
+        font-size: 32px; 
+        padding: 100px 52px;
+    }
+}
+
+/* Media Query for Desktop */
+@media (min-width: 1025px) {
+    body {
+        background: url(../assets/home/background-home-desktop.jpg) no-repeat center center/cover;
+        text-align: left;
+    }
+
+    .subh1 { 
+        font-size: 28px; 
+        margin-bottom: 25px;
+    }
+
+    p { width: 100%; }
+    
+    #content {
+        bottom: 15%;
+        left: 10%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 450px;
+    }
+    
+    #main-button {
+        bottom: 15%;
+        padding: 120px 70px;
+        position: absolute;
+        right: 10%;
+    }
+    
+    #main-button:hover { box-shadow: 0 0 0 100px rgba(255, 255, 255, 0.15); }
 }

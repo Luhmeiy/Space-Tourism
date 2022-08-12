@@ -4,6 +4,14 @@ let counter   = 0;
 
 retrieve();
 
+function openNav() {
+    document.getElementById("nav-menu").style.width = "250px";
+}
+  
+function closeNav() {
+    document.getElementById("nav-menu").style.width = "0";
+}
+
 for (const value of values) {
     value.addEventListener('click', () => {
         counter = value.id;
@@ -32,16 +40,16 @@ function retrieve() {
                 document.getElementById("travel").innerHTML    = myObj.destinations[counter].travel;
             }
             else if (lastURL == "crew.html") {
-                document.getElementById("dest-name").innerHTML = myObj.crew[counter].name;
+                document.getElementById("crew-name").innerHTML = myObj.crew[counter].name;
                 document.getElementById("role").innerHTML      = myObj.crew[counter].role;
-                document.querySelector(".dest-img").src        = myObj.crew[counter].images.png;
-                document.querySelector(".dest-img").alt        = myObj.crew[counter].name;
+                document.querySelector(".crew-img").src        = myObj.crew[counter].images.png;
+                document.querySelector(".crew-img").alt        = myObj.crew[counter].name;
                 document.querySelector(".spaced").innerHTML    = myObj.crew[counter].bio;
             }
             else if (lastURL == "technology.html") {
-                document.getElementById("dest-name").innerHTML = myObj.technology[counter].name;
-                document.querySelector(".dest-img").src        = myObj.technology[counter].images.portrait;
-                document.querySelector(".dest-img").alt        = myObj.technology[counter].name;
+                document.getElementById("tech-name").innerHTML = myObj.technology[counter].name;
+                document.querySelector(".tech-img").src = document.body.clientWidth <= 1024 ? myObj.technology[counter].images.landscape : myObj.technology[counter].images.portrait 
+                document.querySelector(".tech-img").alt        = myObj.technology[counter].name;
                 document.querySelector(".spaced").innerHTML    = myObj.technology[counter].description;
             }            
         }

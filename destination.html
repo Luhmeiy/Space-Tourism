@@ -3,24 +3,40 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+      	<title>Frontend Mentor | Space tourism website</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/destination.css">
+
+	<!-- Icons -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair" rel="stylesheet">
-      	<title>Frontend Mentor | Space tourism website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/destination.css">
-    <script defer src="scripts/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair" rel="stylesheet">
+
+	<!-- Script -->
+	<script defer src="scripts/script.js"></script>
 </head>
 <body>
-  	<nav>
+    <nav>
 		<a href="index.html"><img src="assets/shared/logo.svg" id="logo" alt="logo"></a>
-		<ul>
-			<li class="nav-text"><a href="index.html"><b>00</b> Home</a></li>
-			<li class="nav-text active"><a href="destination.html"><b>01</b> Destination</a></li>
-			<li class="nav-text"><a href="crew.html"><b>02</b> Crew</a></li>
-			<li class="nav-text"><a href="technology.html"><b>03</b> Technology</a></li>
-		</ul>
+		<div class="space">
+			<ul id="nav-menu">
+				<li class="nav-text" id="close"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+					<i class="fa-solid fa-xmark"></i>
+				</a></li>
+				<li class="nav-text"><a href="index.html"><b>00</b> Home</a></li>
+				<li class="nav-text active"><a href="destination.html"><b>01</b> Destination</a></li>
+				<li class="nav-text"><a href="crew.html"><b>02</b> Crew</a></li>
+				<li class="nav-text"><a href="technology.html"><b>03</b> Technology</a></li>
+			</ul>
+			<a href="javascript:void(0);" class="icon" onclick="openNav()">
+				<i class="fa-solid fa-bars"></i>
+			</a>
+		</div>
 	</nav>
     <div class="container">
         <h5 id="title"><span class="gray">01</span> Pick your destination</h5>
