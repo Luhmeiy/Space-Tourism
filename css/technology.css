@@ -16,7 +16,7 @@ body {
     height: 170px;
     margin-left: -50px;
     object-fit: cover;
-    width: 100vw;
+    width: calc(100vw + 50px);
 }
 
 .tech-menu {
@@ -57,7 +57,10 @@ body {
         background: url(../assets/technology/background-technology-tablet.jpg) no-repeat center center/cover;
     }
     
-    .tech-img { height: 350px; }
+    .tech-img { 
+        height: 350px; 
+        width: 100vw;
+    }
 
     .tech-menu { margin: 50px 0 30px; }
 
