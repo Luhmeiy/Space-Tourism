@@ -14,9 +14,8 @@ body {
 
 .tech-img {
     height: 170px;
-    margin-left: -50px;
     object-fit: cover;
-    width: calc(100vw + 50px);
+    width: 100vw;
 }
 
 .tech-menu {
@@ -59,7 +58,7 @@ body {
     
     .tech-img { 
         height: 350px; 
-        width: 100vw;
+        margin-left: -50px;
     }
 
     .tech-menu { margin: 50px 0 30px; }
